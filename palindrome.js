@@ -1,12 +1,12 @@
 
-function checkPalindrome(str) {
-    const len = str.length;
-    for (let i = 0; i < len / 2; i++) {
-      if (str[i] !== str[len - 1 - i]) {
+function Palindrome(str) {
+    const size = str.length;
+    for (let i = 0; i < size / 2; i++) {
+      if (str[i] !== str[size - 1 - i]) {
         return("NOT a palindrome");
       }
     }
-    return("The string is a palindrome");
+    return("It is a palindrome");
 }
-console.log(checkPalindrome("redivider"));
-console.log(checkPalindrome("karthi"));
+console.log(Palindrome("malayalam"));
+console.log(Palindrome("kishore"));
