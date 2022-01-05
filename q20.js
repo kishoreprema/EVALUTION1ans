@@ -1,7 +1,7 @@
 //console log
-console.log("hell0");
+console.log("YAVAR");
 //console.dir
-let object = { property1 : 1, property1 : 2, method : function(){} };
+let object = { property1 : "name", property1 : 67, method : function(){} };
 console.dir(object);
 //cosole.count
 for (let i = 0; i < 5; i++) {
@@ -12,7 +12,7 @@ var arr1=["Audi", "Volvo", "Ford"]
 console.table(arr1);
 //console.time()andtimeEnd()
 console.time();
-let arr = Array(1000);
+let arr = Array(10);
 for(let i=0; i<arr.length; i++) {
 arr[i] = new Object();
 }
@@ -26,9 +26,9 @@ function foo() {
   }
     foo();
 //console group and groupEnd
-console.log("Hello world!");
+console.log("Hi yavar!");
 console.group();
-console.log("Hello again, this time inside a group!");
+console.log("Hi again, this time inside a group!");
 console.groupEnd();
 console.log("and we are back.");    
 //console.assert
