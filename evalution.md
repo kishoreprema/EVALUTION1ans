@@ -58,3 +58,46 @@ console.log(test_prime(5));
 ```console
 true
 ```
+
+### 2.Difference between == and === ###
+**Algorithm**
+
+    - step 1. step 1. Start the program.
+    - step 2. now assigning values to a variable.
+    - step 3. Then compare the values to types.
+    - step 4. after comparision it will print either true or false.
+    - step 5. stop
+
+**psuedocode**
+```
+    BEGIN
+     INIT a
+        INIT c
+    COMPARE a == c
+     PRINT TRUE
+     CHECK a === c 
+        PRINT TRUE 
+  THEN
+END 
+```
+
+**code for ==**
+```javascript
+var a = 1;
+var c = true;
+console.log(a == c);
+```
+**output**
+```console
+true
+```
+**code fro ===**
+```javascript
+var a = 1;
+var c = true;
+console.log(a === c);
+```
+**output**
+```console
+false
+```
