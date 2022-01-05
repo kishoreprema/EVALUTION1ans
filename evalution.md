@@ -90,7 +90,7 @@ console.log(a == c);
 ```console
 true
 ```
-**code fro ===**
+**code for ===**
 ```javascript
 var a = 1;
 var c = true;
@@ -132,3 +132,41 @@ reverseString("hello");
 ```console
 "olleh"
 ```
+
+### 4. reverse the word ###
+**Algorithm**
+
+    - step 1. Start the program.
+    - step 2. create a function with  name reverse .
+    - step 3. Then add the word reversly with reversed variable.
+    - step 4. assign the words 
+    - step 4. Call the function with word.
+    - step 5. print the result
+    - step 6. stop.
+
+**psuedocode**
+```
+    BEGIN
+        function reverse(word)
+        word,spilt("").reverse().join("")
+        word=""
+        print the output
+    END
+```
+
+**code**
+```javascript
+function reverse (word) {   
+    return  word.split(" ").reverse().join(" ")
+
+}
+word = 'u and me'
+console.log(reverse(word))
+```
+
+**output**
+```console
+me and u
+```
+
+
