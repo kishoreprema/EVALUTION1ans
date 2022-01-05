@@ -1,7 +1,6 @@
-function reverse (sentence) {
-    sentence= sentence.split(" ").reverse().join(" ")
-    return sentence
+function reverse (word) {   
+    return  word.split(" ").reverse().join(" ")
 
 }
-sentence = 'u and me'
-console.log(reverse(sentence))
+word = 'u and me'
+console.log(reverse(word))

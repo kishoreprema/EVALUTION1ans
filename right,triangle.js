@@ -1,6 +1,6 @@
 var string = "";
-var size =5;
-for(var i=1; i<=size; i++)
+var length =7;
+for(var i=1; i<=length; i++)
 
 {
   string= string+"*";
