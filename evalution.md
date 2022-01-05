@@ -101,11 +101,11 @@ console.log(a === c);
 false
 ```
 
-### 3. reverse a string###
+### 3. reverse a string ###
 **Algorithm**
 
     - step 1. Start the program.
-    - step 2. create a function with reverse string.
+    - step 2. create a function with  name reverse string.
     - step 3. Then add the string reversly with reversed variable.
     - step 4. Call the function with string.
     - step 5. print the result
