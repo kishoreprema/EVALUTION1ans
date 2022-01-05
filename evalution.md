@@ -54,3 +54,7 @@ function test_prime(n)
 
 console.log(test_prime(5));
 ```
+**output**
+```console
+true
+```
