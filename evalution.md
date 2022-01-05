@@ -72,13 +72,12 @@ true
 ```
     BEGIN
      INIT a
-        INIT c
+     INIT c
     COMPARE a == c
-     PRINT TRUE
+        PRINT output
      CHECK a === c 
-        PRINT TRUE 
-  THEN
-END 
+        PRINT output 
+    END 
 ```
 
 **code for ==**
