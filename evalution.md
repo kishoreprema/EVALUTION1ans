@@ -354,12 +354,13 @@ console.log(uniquenumbers);
 **psuedocode**
 ```
 BEGIN
-INIT naturalnum
-i and sum as integer; 
-READ naturalnum; 
-for i upto n increment i by 1 and i=1 
-{ sum=sum+i; } 
-PRINT sum; 
+    INIT naturalnum
+    i and sum as integer; 
+    READ naturalnum; 
+    for i upto n increment i by 1 and i=1 
+    { sum=sum+i; } 
+    PRINT sum; 
+END
 ```
 **code**
 ```javascript
