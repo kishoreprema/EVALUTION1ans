@@ -343,6 +343,7 @@ console.log(uniquenumbers);
 
 ### 9.sum of 10 integers ###
 **Algorithm**
+
     - Step 1. start the program.
     - Step 2. Declare two varibale sum = 0 , i = 1.
     - Step 3. Use for loop to iterate the values.
