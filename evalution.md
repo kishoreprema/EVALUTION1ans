@@ -171,13 +171,13 @@ me and u
 ### 5.Palindrome ###
 **Algorithm**
 
-Step 1. Start the program .
-Step 2. Create a function with string parameter
-Step 3. Initialise the varibale to know the length of string.
-Step 4. Run the for loop for iteration of half word.
-Step 5. Use if condition to check first value with last value else print not palindrome.
-Step 6. Then call the function with string parameter.
-Step 7. Stop.
+    - Step 1. Start the program .
+    - Step 2. Create a function with string parameter
+    - Step 3. Initialise the varibale to know the length of string.
+    - Step 4. Run the for loop for iteration of half word.
+    - Step 5. Use if condition to check first value with last value else print not palindrome.
+    - Step 6. Then call the function with string parameter.
+    - Step 7. Stop.
 
 **psuedocode**
 ```
@@ -213,4 +213,4 @@ console.log(Palindrome("kishore"));
 It is a palindrome
  NOT a palindrome
  ```
- 
+
