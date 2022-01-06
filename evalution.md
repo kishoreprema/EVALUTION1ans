@@ -378,5 +378,50 @@ console.log('The sum of natural numbers:', sum);
 The sum of natural numbers: 55
 ```
 
+### 10. number of odd and even ###
+**Algorithm**
+
+    - Step 1. start the program
+    - Step 2. Declare two variables odd and even with 0 value.
+    - Step 3. Iterate for loop till 100 times.
+    - Step 4. if(i % 2 == 0) then print even numbers
+    - Step 5. else print odd numbers.
+    - Step 7. Stop.
+
+**psuedocode**
+```
+BEGIN
+  INIT count =100;
+  INIT evennum=0,oddnum=0;
+  FOR(let i=0;i<=value;i++) 
+    IF (i % 2 == 0) 
+      evennum = evennum + i;
+    ELSE 
+      oddnum = oddnum + i;
+    ENDIF
+  PRINT ("total of even",evennum);
+  PRINT ("total of odd",oddnum); 
+END
+```
+**code**
+```javascript
+var count =100;
+oddnum=0;evennum=0;
+for (i = 1; i <=a; i++)
+  {
+    if (i % 2 == 0)
+      evennum = evennum + i;
+    else
+      oddnum = oddnum + i;
+  }
+console.log("total of odd", oddnum);
+console.log("total of even", evennum);
+```
+
+**output**
+```console
+total of odd 2500
+total of even 2550
+```
 
 
