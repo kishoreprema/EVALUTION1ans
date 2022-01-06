@@ -644,3 +644,48 @@ let groupbyid = people.reduce((r, a) => {
   ``` console
   {1: 1, 2: 1, 3: 1}
   ```
+
+### 16. display a pattern like right angle triangle ###
+**Algorithm**
+
+    - Step 1. Start the program.
+    - Step 2. Declare one empty string and size.
+    - Step 3. for loop will execute and increase the i values.
+    - Step 4. Then print the string.
+    - Step 5. Stop.
+
+**psuedocode**
+```
+BEGIN
+INIT string = "";
+INIT length = 5;
+FOR(let i = 1; i <= length; i++) 
+    SET string += "*";
+ENDFOR
+PRINT (string);
+```
+
+**code**
+```javascript
+var string = "";
+var length =7;
+for(var i=1; i<=length; i++)
+
+{
+  string= string+"*";
+  console.log(string);
+}
+```
+
+**output**
+```console
+ *
+ **
+ ***
+ ****
+ *****
+ ******
+ *******
+ ```
+
+ 
