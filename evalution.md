@@ -240,7 +240,7 @@ console.log(numbers.map(element => element * element))
 [36, 49, 16, 81, 9]
 ```
 **Algorithm for foreach**
-    -  Step 1. start the program
+    - Step 1. start the program
     - Step 2. Create a array with number values.
     - Step 3. Use map method with the array and write the event.
     - Step 4. Print the values
