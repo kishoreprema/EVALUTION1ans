@@ -797,3 +797,80 @@ console.log(num);
   4 5 6 
  7 8 9 10 
 ```
+
+### 19,display the pattern like a diamond ###
+**Algorithm**
+
+Step 1. Start the program.
+Step 2. Initialize n variable and empty string.
+Step 3. create for loop and will execute 2*i-1 times for print stars.
+Step 4. To add "/n" for printing new line .
+Step 5. After that it will execute reverse pyramid.
+Step 6. print the values.
+Step 7. Stop
+
+**pseudocode**
+```
+BEGIN
+INIT n = 5;
+INIT string = "";
+FOR (let i = 1; i <= n; i++) 
+  FOR (let j = 1; j < n - i + 1; j++)
+   SET string += " ";
+  ENDFOR
+  FOR (let k = 1; k <= 2 * i - 1; k++)
+   SET string += "*"; 
+   SET string += "\n";
+  ENDFOR
+ENDFOR
+ FOR (let i = 1; i <= n - 1; i++)
+    FOR (let j = 1; j < i + 1; j++)
+     SET string += " ";
+    ENDFOR
+    FOR (let k = 1; k <= 2 * (n - i) - 1; k++)
+      SET string += "*"; 
+      SET string += "\n";
+    ENDFOR  
+ENDFOR
+PRINT (string);
+END
+```
+
+**code**
+```javascript
+var n = 5;
+var string= "";
+for (let i = 1; i <= n; i++) {
+  for (let j = 1; j < n -i + 1; j++) {
+    string += " ";
+  }
+  for (let k = 1; k <= 2 * i - 1; k++) {
+    string += "*";
+  }
+  string += "\n";
+}
+for (let i = 1; i <= n - 1; i++) {
+  for (let j = 1; j < i+1; j++) {
+    string += " ";
+  }
+  for (let k = 1;k <= 2 * (n - i) - 1;k++) {
+    string += "*";
+  }
+  string += "\n";
+}
+console.log(string);
+```
+
+**output**
+```console
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+```
+
