@@ -308,4 +308,36 @@ console.log(`Random value between ${startvalue} and ${endvalue} is ${value}`)
 Random value between 1 and 5 is 2
 ```
 
+### 8.remove duplicate value ###
+**Algorithm**
+
+    - Step 1. start the program
+    - Step 2. Create a array with number values.
+    - Step 3. use SET method
+    - Step 4. array initialized with SET method
+    - Step 5. Print the values
+    - Step 6. stop
+
+**psuedocode**
+```
+BEGIN
+    INIT numbers
+    INIT uniquenumbers
+    SET numbers
+    PRINT uniquenumbers
+END
+```
+
+**code**
+```javascript
+let numbers = [1,2,9,4,5,8,3,5,1,4,5];
+let uniquenumbers = [...new Set(numbers)];
+
+console.log(uniquenumbers);
+```
+
+**output**
+```console
+[1, 2, 9, 4, 5, 8, 3]
+```
 
