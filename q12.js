@@ -13,6 +13,6 @@ var filteredArr = arr.filter(values => {
   a.add(values.id);
   const duplicate2= a.has(values.id);
   a.add(values.name);
-  return !duplicate1,!duplicate2 ;
+  return !duplicate1,!duplicate2 ;git 
 });
 console.log(a);
