@@ -517,4 +517,66 @@ console.log(a);
 6: 5
 7: "James clear"
 ```
+ 
+### 13.Compare two objects, If all properties are equal return true or return false? ###
+**Algorithm**
+
+    - Step 1. Start the program.
+    - Step 2. Initialize the objects.
+    - Step 3. To create a function with object1,object2 parameters.
+    - Step 4. To get the keys from two parameters then check both length.
+    - Step 5. To check both of properties with if condition return the boolean values.
+    - Step 6. Call the function with given properties.
+    - Step 7. Print result
+    - Step 8. Stop.
+
+**psuedocode**
+```
+BEGIN
+INIT a,b,c and d
+FUNCTION cmp(object1,object2)
+    INIT keys1 = Object.keys(object1);
+    INIT keys2 = Object.keys(object2);
+    IF(keys1.length !== keys2.length)THEN
+      RETURN false;
+    ENDIF
+    FOR(let key of keys1) 
+       IF(object1[key] !== object2[key]) THEN
+         RETURN false;
+       ELSE
+         RETURN true;
+       ENDIF
+    ENDFOR
+ENDFUNCTION
+END
+```
+
+**code**
+```javascript
+var a={id: 1, name: "edison"};
+var b={id: 1, name: "edison"};
+var c={id: 1, name: "edison"};
+var d={id: 1, name: "edison"};
+function cmp(object1, object2) {
+    const keys1 = Object.keys(object1);
+    const keys2 = Object.keys(object2);
+    if (keys1.length !== keys2.length) {
+      return false;
+    }
+    for (let key of keys1) {
+      if (object1[key] !== object2[key]) {
+        return false;
+      }
+    }
+    return true;
+  }
+  console.log(cmp(a, c)); // => true
+  console.log(cmp(c, d)); // => false
+  ```
+
+  **output**
+  ```console    
+    true
+    true
+```
 
