@@ -739,4 +739,61 @@ console.log(string);
  7 8 9 10
  ```
 
- 
+
+### 18,Write a program in Javascript to make such a pattern like a pyramid with numbers increased by 1 ###
+**Algorithm**
+
+    - Step 1. start the program.
+    - step 2. Initialize count variable and one empty string.
+    - Step 3. Create for loop to iterate values of specified condition.
+    - Step 4. After that create another for loop with condition of (2*i)-i
+    - Step 5. Add the count value to string and increment count.
+    - Step 6. print the value.
+    - Step 7. Stop.
+
+**psuedocode**
+```
+BEGIN
+INIT n;
+INIT number = "";
+INIT count=1;
+FOR (let i = 1;i<n;i++)
+  FOR (let j = 1;j<= n - i;j++) 
+    SET number += " ";
+    ENDFOR
+  FOR (let k = 0; k < 2*i-i ; k++) 
+   SET number += count;
+   SET count++;
+   SET number += "
+   ENDFOR
+  SET += "\n";
+  ENDFOR
+PRINT (number);
+END
+```
+**code**
+```javascript
+var n=5;
+var num = "";
+var count = 1;
+for (let i = 1; i < n; i++) {
+  for (let j = 1; j <= n - i; j++) {
+    num += " ";
+  }
+  for (let k = 0; k < 2*i-i; k++) {
+    num +=count;
+    count++;
+    num +=" "; 
+  }  
+  num += "\n";
+}
+console.log(num);
+```
+
+**output**
+```console
+    1 
+   2 3 
+  4 5 6 
+ 7 8 9 10 
+```
