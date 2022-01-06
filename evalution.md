@@ -425,3 +425,36 @@ total of even 2550
 ```
 
 
+### 11. merge two array ###
+**Algorithm**
+
+    - Step 1. start the program.
+    - Step 2. Declare two arrays arr1,arr2.
+    - Step 3. creat the new array
+    - Step 4. to concatinate the array values to the new array.
+    - Step 5. Print the new array
+    - Step 6. Stop.
+
+**psuedocode**
+```
+BEGIN
+    INIT arr1;
+    INIT arr2;
+    THEN 
+    ADD arr1,arr2 ;
+    PRINT new array
+END
+```
+**code**
+``` javascript
+var array1 = [1,2,9,3,5,1,4,5];
+var array2 = [11,54,70,40];
+
+var mergedarray = array1.concat(array2); 
+console.log(mergedarray);
+```
+
+**output**
+```console
+[1, 2, 9, 3, 5, 1, 4, 5, 11, 54, 70, 40]
+```
