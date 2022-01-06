@@ -272,3 +272,40 @@ kishore
 kamal
 pranav
 ```
+
+### 7. random number ###
+**Algorithm**
+
+    - Step 1. start the program
+    - Step 2. Use Math.floor to returns the largest integer less than or equal to a given number
+    - Step 3. Math.random to get the random value till given number.
+    - Step 5. Add the number 1 to avoid the 0 values.
+    - Step 6. Then print the number.
+    - Step 7. Stop.
+
+**psuedocode**
+```
+BEGIN
+inti startvalue
+inti  endvalue
+value = (Math.floor((Math.random() * 5) + 1));
+print (`Random value between ${startvalue} and ${endvalue} is ${value}`)
+END
+```
+**code**
+```javascript
+var startvalue= 1;
+var endvalue = 5
+
+
+ value = Math.floor(Math.random() * (endvalue- startvalue+ 1)) + startvalue;
+
+
+console.log(`Random value between ${startvalue} and ${endvalue} is ${value}`)
+```
+**output**
+```console
+Random value between 1 and 5 is 2
+```
+
+
