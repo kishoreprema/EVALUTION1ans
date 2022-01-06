@@ -1,6 +1,6 @@
 var count =100;
 oddnum=0;evennum=0;
-for (i = 1; i <=a; i++)
+for (i = 1; i <=count; i++)
   {
     if (i % 2 == 0)
       evennum = evennum + i;

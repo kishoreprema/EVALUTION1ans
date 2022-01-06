@@ -580,3 +580,67 @@ function cmp(object1, object2) {
     true
 ```
 
+### 14. Take a multidimensional array and flat the array? ###
+**Algorithm**
+
+    - Step 1. start program
+    - Step 2. To create a muiltidimentional array.
+    - Step 3. To use multi.flat to flat the array to single array.
+    - Step 4. Print the Array.
+    - Step 5. Stop.
+
+**psuedocode**
+```
+BEGIN
+INIT multi = [1,4,2,3,[10,20,20], [100,500,700,600],[2000,1000]];
+PRINT (multi.flat(Infinity));
+END
+```
+
+**code**
+```javascript
+
+let multidimensional = [1,4,2,3,[10,20,20], [100,500,700,600],
+[2000,1000]];
+console.log(multidimensional.flat(Infinity));
+```
+**output**
+```console
+[1, 4, 2, 3, 10, 20, 20, 100, 500, 700, 600, 2000, 1000]
+```
+
+
+### 15. array reduce method ###
+**Algorithm**
+
+    - Step 1. Start the program.
+    - Step 2. Initialize the array and its objects.
+    - Step 3. TO use the reduce function to iterate previous value with current value.
+    - Step 4. Check the both values and add count into previous value or make it one
+    - Step 5. Print the value.
+    - Step 6. Stop.
+**Psuedocode**
+```
+BEGIN
+INIT peoples=[{id :1 ,name:'edison'}]
+DECLARE groupByid = peoples.reduce((r,a)
+  r[a.id] = r[a.id] + 1 || 1;
+  RETURN r;
+PRINT groupByid; 
+END
+```
+**code**
+```javascript
+var people = [{id: 1, name: 'edison' },{id: 2, name: 'Annand'}, 
+{id: 3, name: 'Vasnath'}];
+let groupbyid = people.reduce((r, a) => {
+  r[a.id]=a[r.id]+1 || 1
+   return r;
+  }, {});
+  console.log(groupbyid);
+  ```
+
+  **output**
+  ``` console
+  {1: 1, 2: 1, 3: 1}
+  ```
