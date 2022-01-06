@@ -688,4 +688,55 @@ for(var i=1; i<=length; i++)
  *******
  ```
 
+ ### 17.  Write a program in Javascript to make such a pattern like right angle triangle with number increased by 1 ###
+ **Algorithm**
+
+    - Step 1. Start the program.
+    - Step 2. Declare empty string and nitialize the value of 4
+    - Step 3. Initialize count with value of 1.
+    - Step 4. Run for loop 4 times then run the nested for loop i times.
+    - Step 5. Add the count value to a variable as string and it will execute "\n"
+    - Step 6. Print the string variable. 
+    - Step 7. Stop.
+
+**psuedocode**
+```
+BEGIN 
+INIT string = "";
+INIT size = 4; 
+INIT count = 1;
+FOR(let i = 1; i <= size; i++)
+   FOR(let j = 1; j <= i; j++)
+     SET string += " " + count;
+     SETcount++;
+   ENDFOR
+   SET string += "\n";
+ENDFOR
+PRINT (string);
+END
+```
+
+**code**
+```javascript
+var string = "";
+var size = 4; 
+var count = 1;
+for (let i = 1; i <= size; i++) {
+  for (let j = 1; j <= i; j++) {
+    string += " "+count;
+    count++;
+  }
+  string += "\n";
+}
+console.log(string);
+```
+
+**output**
+```console
+ 1
+ 2 3
+ 4 5 6
+ 7 8 9 10
+ ```
+
  
