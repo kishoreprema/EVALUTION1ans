@@ -496,7 +496,7 @@ var arr = [
     {id: 5, name: 'James clear'},
 ];
 
-const filteredArr = arr.filter(values => {
+var filteredArr = arr.filter(values => {
   const duplicate1= a.has(values.id);
   a.add(values.id);
   const duplicate2= a.has(values.id);
