@@ -216,12 +216,13 @@ It is a palindrome
 
 ### 6.  Difference between foreach and map ###
 **Algorithm for map**
+
     - Step 1. start the program
     - Step 2. Create a array with number values.
-    - Step 3. Use map method with the array and write the event.
+    - Step 3. Use map method with the array and    write the event.
     - Step 4. Print the values
     - Step 5. stop
-
+   
 **psuedocode**
 ```
     BEGIN
