@@ -875,6 +875,7 @@ console.log(string);
 ```
 
 ### 20.explain the terms ###
+```
 **colsole.log()**
     - It is used to print element
 ```
