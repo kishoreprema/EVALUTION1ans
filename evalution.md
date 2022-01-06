@@ -458,3 +458,63 @@ console.log(mergedarray);
 ```console
 [1, 2, 9, 3, 5, 1, 4, 5, 11, 54, 70, 40]
 ```
+
+### 12. remove duplicate array ###
+**Algorithm**
+
+    - Step 1. Start the program.
+    - Step 2. initialize a constructor and array.
+    - Step 3. And use filtered function to iterate the values in array.
+    - Step 4. to check the name and id in consructor with has() method by using declared variables
+    - Step 5. Check both values using !duplicate1,duplicate2 and return the value.
+    - Step 6. Then call the function with array.
+    - Step 7. print the output.
+    - Step 8. stop.
+
+**psuedocode**
+```
+BEGIN
+INIT set();
+DECLARE arr and assigning the objects;
+FUNCTION using filtered=arr.filter();
+  SET add values.id
+  SET add values.name
+  RETURN !duplicate1,!duplicate2
+ENDFUNCTION
+PRINT a;
+END
+```
+**code**
+```javascript
+var a = new Set();
+var arr = [
+    {id: 1, name: 'Stephen covey'},
+    {id: 2, name: 'Robin Sharma' }, 
+    {id: 3, name: 'Tolstoy'}, 
+    {id: 3, name: 'Tolstoy'}, 
+    {id: 5, name: 'James clear'},
+    {id: 5, name: 'James clear'},
+];
+
+const filteredArr = arr.filter(values => {
+  const duplicate1= a.has(values.id);
+  a.add(values.id);
+  const duplicate2= a.has(values.id);
+  a.add(values.name);
+  return !duplicate1,!duplicate2 ;
+});
+console.log(a);
+```
+
+**output**
+```console
+0: 1
+1: "Stephen covey"
+2: 2
+3: "Robin Sharma"
+4: 3
+5: "Tolstoy"
+6: 5
+7: "James clear"
+```
+
