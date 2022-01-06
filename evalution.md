@@ -168,5 +168,49 @@ console.log(reverse(word))
 ```console
 me and u
 ```
+### 5.Palindrome ###
+**Algorithm**
 
+Step 1. Start the program .
+Step 2. Create a function with string parameter
+Step 3. Initialise the varibale to know the length of string.
+Step 4. Run the for loop for iteration of half word.
+Step 5. Use if condition to check first value with last value else print not palindrome.
+Step 6. Then call the function with string parameter.
+Step 7. Stop.
 
+**psuedocode**
+```
+BEGIN
+FUNCTION Palindrome(str)
+     SET size = str.length;
+     FOR (let i = 0; i < size / 2; i++)
+       IF str[i] !== str[size - 1 - i]) 
+         RETURN ("not a palindrome")
+        ENDIF
+       ENDFOR
+     RETURN ("It is a palindrome")
+PRINT (checkPalindrome("malayalam")
+PRINT (checkPalindrome("kishore")
+```
+**code**
+```javascript
+
+function Palindrome(str) {
+    const size = str.length;
+    for (let i = 0; i < size / 2; i++) {
+      if (str[i] !== str[size - 1 - i]) {
+        return("NOT a palindrome");
+      }
+    }
+    return("It is a palindrome");
+}
+console.log(Palindrome("malayalam"));
+console.log(Palindrome("kishore"));
+```
+**output**
+```console
+It is a palindrome
+ NOT a palindrome
+ ```
+ 
