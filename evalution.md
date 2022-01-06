@@ -874,12 +874,124 @@ console.log(string);
     *
 ```
 
-### 20.explain the terms ###
-```
+### 20.explain the terms 
+
 **colsole.log()**
     - It is used to print element
-```
 **code**
 ```javascript
 console.log("YAVAR");
+```
+**output**
+```console
+YAVAR
+```
+
+**console.dir()**
+    - It is used to display the properties and methods of the object.
+
+**code**
+```javasceript
+var object = { property1 : "name", property1 : 67, method : function(){} };
+console.dir(object);
+```
+**output**
+```console
+method: ƒ ()
+property1: 67
+__proto__: Object
+```
+**console.count**
+    -  The console.count() method logs the number of times that this particular call to count() has been called.
+
+**code**
+```javascript
+for (let i = 0; i < 5; i++) {
+    console.count("myLabel");
+}
+```
+**output**
+```console
+myLabel: 1
+myLabel: 2
+myLabel: 3
+myLabel: 4
+myLabel: 5
+```
+
+**console time() and console.timeEnd()**
+- The **console.time()** method starts a timer you can use to track how long an operation takes.
+  - The **console.timeEnd()** stops a timer that was previously started by calling console.time().
+
+**code**
+```javascript
+console.time();
+let arr = Array(1000);
+for(let i=0; i<arr.length; i++) {
+arr[i] = new Object();
+}
+console.timeEnd(); 
+```
+**output**
+```console
+default: 0.254150390625 ms
+```
+
+**console.trace()**
+
+  - The trace() method displays a trace that show how the code ended up at a certain point.
+
+**code**
+```javascript  
+function foo() {
+    function bar() {
+      console.trace();
+    }
+    bar();
+  }
+    foo();
+```
+**output**
+```console
+bar	
+foo	
+(anonymous)
+```
+
+**console.group() and group end()**
+
+  - The **group()** method starts a message group.All new messages will be written inside this group.
+  - The **groupEnd()** ends a message group.
+
+**code**
+```javascript
+console.log("Hello world!");
+console.group();
+console.log("Hello again, this time inside a group!");
+console.groupEnd();
+console.log("and we are back.");  
+```
+**output**
+```console
+Hello world!
+Hello again, this time inside a group!
+and we are back.
+```
+
+**console.assert()**
+
+  - The **console.assert()** method writes an error message to the console if the assertion is   false. If the assertion is true, nothing happens.
+
+**code**
+```javascript
+function assert(condition, message) {
+    if (!condition) {
+        throw message || "Assertion failed";
+    }
+}
+assert();
+```
+**output**
+```console
+Assertion failed
 ```

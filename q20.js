@@ -1,7 +1,7 @@
 //console log
 console.log("YAVAR");
 //console.dir
-let object = { property1 : "name", property1 : 67, method : function(){} };
+var object = { property1 : "name", property1 : 67, method : function(){} };
 console.dir(object);
 //cosole.count
 for (let i = 0; i < 5; i++) {
