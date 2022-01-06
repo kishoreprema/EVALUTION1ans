@@ -740,7 +740,7 @@ console.log(string);
  ```
 
 
-### 18,Write a program in Javascript to make such a pattern like a pyramid with numbers increased by 1 ###
+### 18.Write a program in Javascript to make such a pattern like a pyramid with numbers increased by 1 ###
 **Algorithm**
 
     - Step 1. start the program.
@@ -798,7 +798,7 @@ console.log(num);
  7 8 9 10 
 ```
 
-### 19,display the pattern like a diamond ###
+### 19.display the pattern like a diamond ###
 **Algorithm**
 
 Step 1. Start the program.
@@ -874,3 +874,11 @@ console.log(string);
     *
 ```
 
+### 20.explain the terms ###
+**colsole.log()**
+    - It is used to print element
+```
+**code**
+```javascript
+console.log("YAVAR");
+```
