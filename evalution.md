@@ -214,3 +214,59 @@ It is a palindrome
  NOT a palindrome
  ```
 
+### 6.  Difference between foreach and map ###
+**Algorithm for map**
+    - Step 1. start the program
+    - Step 2. Create a array with number values.
+    - Step 3. Use map method with the array and write the event.
+    - Step 4. Print the values
+    - Step 5. stop
+
+**psuedocode**
+```
+    BEGIN
+        int number=[]
+        print map(element => element * element))
+        print output
+    END
+```
+**code**
+```javascript
+var numbers = [6,7,4,9,3]
+console.log(numbers.map(element => element * element)) 
+```
+**output**
+```console
+[36, 49, 16, 81, 9]
+```
+**Algorithm for foreach**
+    -  Step 1. start the program
+    - Step 2. Create a array with number values.
+    - Step 3. Use map method with the array and write the event.
+    - Step 4. Print the values
+    - Step 5. stop
+
+**psuedocode**
+```
+    BEGIN
+        INIT numbers
+        PRINT forEach(element => element * element)
+    END
+```
+
+**code**
+```javascript
+var myArray = [
+    { rollnum : 67, name: "kishore" },
+    { rollnum : 68, name: "kamal" },
+    { rollnum : 69, name: "pranav" },
+  ]
+myArray.forEach(element => console.log(element.name))
+```
+
+**output**
+```console
+kishore
+kamal
+pranav
+```
