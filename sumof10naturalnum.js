@@ -1,5 +1,5 @@
-let nuturalnum=10;
-let sum = 0;
+var nuturalnum=10;
+var sum = 0;
 for (let i = 1; i <= nuturalnum; i++) {
     sum += i;
 }

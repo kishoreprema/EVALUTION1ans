@@ -341,3 +341,40 @@ console.log(uniquenumbers);
 [1, 2, 9, 4, 5, 8, 3]
 ```
 
+### 9.sum of 10 integers ###
+**Algorithm**
+    - Step 1. start the program.
+    - Step 2. Declare two varibale sum = 0 , i = 1.
+    - Step 3. Use for loop to iterate the values.
+    - Step 4. Add the iterated values inside the for.
+    - Step 5. Print the value and call the function.
+    - Step 6. Stop.
+
+**psuedocode**
+```
+BEGIN
+INIT naturalnum
+i and sum as integer; 
+READ naturalnum; 
+for i upto n increment i by 1 and i=1 
+{ sum=sum+i; } 
+PRINT sum; 
+```
+**code**
+```javascript
+var nuturalnum=10;
+var sum = 0;
+for (let i = 1; i <= nuturalnum; i++) {
+    sum += i;
+}
+
+console.log('The sum of natural numbers:', sum);
+```
+
+**output**
+```console
+The sum of natural numbers: 55
+```
+
+
+
