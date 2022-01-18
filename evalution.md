@@ -622,7 +622,7 @@ console.log(multidimensional.flat(Infinity));
 **Psuedocode**
 ```
 BEGIN
-INIT peoples=[{id :1 ,name:'edison'}]
+INIT peoples=[{id :1 ,name:'kishore'}]
 DECLARE groupByid = peoples.reduce((r,a)
   r[a.id] = r[a.id] + 1 || 1;
   RETURN r;
@@ -631,7 +631,7 @@ END
 ```
 **code**
 ```javascript
-var people = [{id: 1, name: 'edison' },{id: 2, name: 'Annand'}, 
+var people = [{id: 1, name: 'kishore' },{id: 2, name: 'Annand'}, 
 {id: 3, name: 'Vasnath'}];
 let groupbyid = people.reduce((r, a) => {
   r[a.id]=a[r.id]+1 || 1
