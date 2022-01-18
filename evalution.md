@@ -984,11 +984,10 @@ and we are back.
 
 **code**
 ```javascript
-function assert(condition, message) {
-    if (!condition) {
-        throw message || "Assertion failed";
-    }
-}
+let x = 5;
+let y = 5;
+const myArr = ["Orange", "Banana", "Mango", "Kiwi"];
+console.assert(x + y == 11, myArr);
 assert();
 ```
 **output**
