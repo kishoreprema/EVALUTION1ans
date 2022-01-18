@@ -1,7 +1,7 @@
-var a={id: 1, name: "edison"};
-var b={id: 1, name: "edison"};
-var c={id: 1, name: "edison"};
-var d={id: 1, name: "edison"};
+var a={id: 1, name: "kishore"};
+var b={id: 1, name: "kishore"};
+var c={id: 1, name: "kishore"};
+var d={id: 1, name: "kishore"};
 function cmp(object1, object2) {
     const keys1 = Object.keys(object1);
     const keys2 = Object.keys(object2);

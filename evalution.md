@@ -937,7 +937,7 @@ console.timeEnd();
 default: 0.254150390625 ms
 ```
 
-**console.trace()**
+ **console.trace()**
 
   - The trace() method displays a trace that show how the code ended up at a certain point.
 
